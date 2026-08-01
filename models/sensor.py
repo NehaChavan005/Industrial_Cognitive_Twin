@@ -11,3 +11,5 @@ class SensorReading(Base):
     rpm = Column(Integer)
     current = Column(Float)
     power = Column(Float)
+    health_score = Column(Integer)
+    machine_status = Column(String)

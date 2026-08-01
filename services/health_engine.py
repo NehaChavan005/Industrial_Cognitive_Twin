@@ -1,4 +1,4 @@
-def calculate_machine_learning(
+def calculate_machine_health(
     temperature,
     vibration,
     rpm,
@@ -40,11 +40,11 @@ def calculate_machine_learning(
 
     #Determine machine status
     if score >= 80:
-        status = "Normal"
+        status = "NORMAL"
     elif score >= 50:
-        status = "Warning"
+        status = "WARNING"
     else:
-        status = "Critical"
+        status = "CRITICAL"
 
     return{
         "health_score": score,
